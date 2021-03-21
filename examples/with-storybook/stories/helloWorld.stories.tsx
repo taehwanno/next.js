@@ -6,7 +6,7 @@ export default {
   title: 'Home',
   component: Home,
   argTypes: {
-    direction: {
+    title: {
       control: {
         type: 'text',
       },
