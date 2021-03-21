@@ -1,3 +1,19 @@
+import { ThemeProvider } from '@emotion/react';
+
+import theme from '../theme';
+
+/**
+ * Global decorator for theming
+ * @see https://storybook.js.org/docs/react/writing-stories/decorators#context-for-mocking
+ */
+export const decorators = [
+  (Story) => (
+    <ThemeProvider theme={theme}>
+      <Story />
+    </ThemeProvider>
+  ),
+]
+
 export const parameters = {
   options: {
     storySort: (a, b) => {
